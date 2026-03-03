@@ -112,7 +112,7 @@ class Detailed(WizardWidget):  #
 
         filter = "data files (*.csv *.txt *.shp *.xls *.xlsm *.xlsx "
         filter += "*.tif *.grd *.png *.img *.jpg *.hdr *.bmp *.adf "
-        filter += "*.las *.laz)"
+        filter += "*.las *.laz *.geojson)"
 
         fname = QFileDialog.getOpenFileName(self, fname, dname, filter=filter)
         if fname[0]:
