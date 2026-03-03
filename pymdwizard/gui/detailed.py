@@ -188,7 +188,7 @@ class Detailed(WizardWidget):  #
                 msg = "Cannot read csv %s:\n%s." % (fname, traceback.format_exc())
                 QMessageBox.warning(self, "Recent Files", msg)
 
-        elif ext.lower() == ".shp":
+        elif ext.lower() in [".shp", ".geojson"]:
             self.clear_widget()
             self.ui.fgdc_enttypl.setText(shortname + " Attribute Table")
             self.ui.fgdc_enttypd.setPlainText(
